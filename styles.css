@@ -1,0 +1,569 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('Images/nature-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff; /* Ensuring text is readable on dark backgrounds */
+}
+
+header, footer {
+    background-color: rgba(0, 77, 64, 0.8); /* Semi-transparent background */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .social-media a {
+    margin-left: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero .cta-button {
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px; /* Space between buttons */
+}
+
+.hero .cta-button:hover {
+    background-color: #004d40;
+}
+
+/* Featured Adventures */
+.featured-adventures {
+    padding: 40px 20px;
+    background-color: rgba(224, 242, 241, 0.8);
+    text-align: center;
+    color: #004d40; /* Dark text for contrast */
+}
+
+.featured-adventures h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.carousel-item {
+    flex: 0 0 auto; /* Prevents stretching */
+    position: relative;
+    text-decoration: none; /* Ensure no underline on links */
+    color: inherit; /* Inherit text color */
+    max-width: 300px; /* Set a maximum width for the items */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 77, 64, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Long Videos Section */
+.long-videos {
+    padding: 40px 20px;
+    background-color: rgba(224, 242, 241, 0.8);
+    text-align: center;
+    color: #004d40; /* Dark text for contrast */
+}
+
+long-videos h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.long-videos .carousel {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.long-videos .carousel-item {
+    flex: 0 0 auto; /* Prevents stretching */
+    position: relative;
+    text-decoration: none; /* Ensure no underline on links */
+    color: inherit; /* Inherit text color */
+    max-width: 300px; /* Set a maximum width for the items */
+}
+
+.long-videos .carousel-item iframe {
+    width: 100%;
+    height: 200px; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 40px 20px;
+    background-color: rgba(0, 77, 64, 0.8);
+    color: #fff;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #e5ff00; /* Change text color to yellow */
+}
+
+/* Social and Support Section */
+.social-support-section {
+    padding: 40px 20px;
+    background-color: rgba(224, 242, 241, 0.8);
+    text-align: center;
+    color: #004d40; /* Dark text for contrast */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-support-section .column {
+    flex: 1 1 calc(33.333% - 40px); /* Three columns with spacing */
+    max-width: 300px;
+    background-color: rgba(0, 77, 64, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.social-support-section .column h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.social-support-section .column p,
+.social-support-section .column a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-support-section .column a:hover {
+    text-decoration: underline;
+}
+
+/* Facebook Section */
+.facebook-section {
+    text-align: center;
+}
+
+.facebook-section .fb-page {
+    margin-top: 20px;
+}
+
+/* Twitter Section */
+.twitter-section {
+    text-align: center;
+}
+
+.twitter-section .twitter-timeline {
+    width: 100%;
+    height: 400px;
+}
+
+/* YouTube Section */
+.youtube-section {
+    text-align: center;
+}
+
+.youtube-section .video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.youtube-section .video-container {
+    flex: 1 1 calc(33.333% - 40px); /* Three columns with spacing */
+    max-width: 300px;
+}
+
+.youtube-section .video-container iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* Donation Section */
+.donation-section {
+    text-align: center;
+}
+
+.donation-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.donate-button {
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.donate-button:hover {
+    background-color: #004d40;
+}
+
+/* Adventure Content */
+.adventure-content {
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #004d40;
+    text-align: center;
+}
+
+/* Smaller image for adventure1.jpg */
+.adventure-content img[src="Images/adventure1.jpg"] {
+    width: 300px; /* Adjust the width as needed */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.adventure-content .video-container {
+    margin: 20px 0;
+}
+
+.adventure-content .preview-thumbnail {
+    width: 50px; /* Adjust the width to make the thumbnails smaller */
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+}
+
+/* Modal for Full-Size Image */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+.modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 77, 64, 0.8);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .quick-links,
+footer .newsletter,
+footer .social-media,
+footer .legal-links {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer .newsletter input {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+footer .newsletter button {
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+footer .newsletter button:hover {
+    background-color: #004d40;
+}
+
+/* Media Queries for Mobile and Tablet Support */
+@media (max-width: 1024px) {
+    header, footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero .cta-button {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .carousel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel-item {
+        max-width: 90%;
+    }
+
+    .youtube-section .video-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .youtube-section .video-container {
+        max-width: 90%;
+    }
+
+    .social-support-section {
+        flex-direction: column;
+    }
+
+    .social-support-section .column {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .about-us p {
+        font-size: 16px;
+    }
+
+    .donation-section p {
+        font-size: 16px;
+    }
+
+    .carousel-item img {
+        width: 90%;
+    }
+
+    .long-videos .carousel-item iframe {
+        height: 150px;
+    }
+
+    .youtube-section .video-container iframe {
+        height: 150px;
+    }
+
+    .social-support-section .column h2 {
+        font-size: 20px;
+    }
+
+    .social-support-section .column p,
+    .social-support-section .column a {
+        font-size: 14px;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .quick-links, footer .newsletter, footer .social-media, footer .legal-links {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero .cta-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .featured-adventures h2,
+    .long-videos h2,
+    .about-us h2 {
+        font-size: 28px;
+    }
+
+    .about-us p,
+    .donation-section p {
+        font-size: 14px;
+    }
+
+    .youtube-section .video-container iframe {
+        height: 120px;
+    }
+
+    .social-support-section .column {
+        padding: 10px;
+    }
+
+    footer .newsletter form {
+        align-items: center;
+    }
+
+    footer .newsletter input {
+        width: 100%;
+    }
+
+    footer .newsletter button {
+        width: 100%;
+    }
+}
