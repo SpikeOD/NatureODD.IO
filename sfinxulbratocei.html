@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
 
     <!-- Prefetching Links -->
-    <link rel="prefetch" href="Images/adventure1.jpg" as="image">
-    <link rel="prefetch" href="Images/adventure-photo1.jpg" as="image">
-    <link rel="prefetch" href="Images/adventure-photo1.1.jpg" as="image">
-    <link rel="prefetch" href="Images/adventure-photo1.2.jpg" as="image">
-    <link rel="prefetch" href="Images/adventure-photo1.3.jpg" as="image">
-    <link rel="prefetch" href="Images/adventure-photo1.4.jpg" as="image">
-    <link rel="prefetch" href="Images/adventure-photo1.5.jpg" as="image">
-    <link rel="prefetch" href="Images/adventure-photo1.6.jpg" as="image">
-    <link rel="prefetch" href="Images/adventure-photo1.7.jpg" as="image">
-    <link rel="prefetch" href="Images/adventure-photo1.8.jpg" as="image">
-    <link rel="prefetch" href="Images/adventure-photo1.9.jpg" as="image">
-    <link rel="prefetch" href="Images/adventure-photo2.jpg" as="image">
-    <link rel="prefetch" href="Images/adventure-photo2.1.jpg" as="image">
+    <link rel="preload" href="Images/adventure1.jpg" as="image">
+    <link rel="preload" href="Images/adventure-photo1.jpg" as="image">
+    <link rel="preload" href="Images/adventure-photo1.1.jpg" as="image">
+    <link rel="preload" href="Images/adventure-photo1.2.jpg" as="image">
+    <link rel="preload" href="Images/adventure-photo1.3.jpg" as="image">
+    <link rel="preload" href="Images/adventure-photo1.4.jpg" as="image">
+    <link rel="preload" href="Images/adventure-photo1.5.jpg" as="image">
+    <link rel="preload" href="Images/adventure-photo1.6.jpg" as="image">
+    <link rel="preload" href="Images/adventure-photo1.7.jpg" as="image">
+    <link rel="preload" href="Images/adventure-photo1.8.jpg" as="image">
+    <link rel="preload" href="Images/adventure-photo1.9.jpg" as="image">
+    <link rel="preload" href="Images/adventure-photo2.jpg" as="image">
+    <link rel="preload" href="Images/adventure-photo2.1.jpg" as="image">
     <link rel="prefetch" href="Images/adventure-photo2.2.jpg" as="image">
     <link rel="prefetch" href="Images/adventure-photo3.jpg" as="image">
     <link rel="prefetch" href="Images/adventure-photo3.1.jpg" as="image">
@@ -94,7 +94,8 @@
     <!-- Sfinxul Bratocei Content -->
     <section id="adventure1" class="adventure-content">
         <div class="image-container">
-            <img src="Images/adventure1.jpg" alt="Sfinxul Bratocei">
+            <img src="Images/adventure1.jpg" alt="Sfinxul Bratocei"
+            class="preview-thumbnail" loading="lazy">
             <div class="overlay-text">
                 <h1>Ciucaș Mountains</h1>
                 <p>The Ciucaș Mountains, located in Romania, are a part of the Carpathian mountain range. These mountains are renowned for their stunning natural beauty, characterized by striking rock formations, lush forests, and diverse flora and fauna. The highest peak, Vârful Ciucaș, rises to an elevation of 1,954 meters (6,411 feet), offering breathtaking panoramic views.</p>
@@ -152,7 +153,6 @@
             </li>
             <li>
                 <a href="https://www.youtube.com/watch?v=_pEKmwmk00g" target="_blank"></a>
-                <!-- You can replace the href value with the actual YouTube video URL -->
                 <div class="video-container">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/_pEKmwmk00g" frameborder="0" allowfullscreen></iframe>
                 </div>
@@ -472,5 +472,356 @@
             modal.style.display = "none";
         }
     </script>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (keep the existing head content) ... -->
+    <style>
+        /* Add carousel styles */
+        .carousel-container {
+            position: relative;
+            max-width: 80%;
+            margin: auto;
+        }
+
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,0.5);
+            color: white;
+            padding: 15px;
+            cursor: pointer;
+            border: none;
+            z-index: 100;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .carousel-counter {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            background: rgba(0,0,0,0.5);
+            padding: 5px 10px;
+            border-radius: 5px;
+            z-index: 100;
+        }
+
+        /* Update modal styles */
+        .modal-content {
+            max-height: 80vh;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Modal for Carousel -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="carousel-container">
+            <div class="carousel-counter"></div>
+            <button class="carousel-nav prev">&lt;</button>
+            <img class="modal-content" id="fullImage">
+            <button class="carousel-nav next">&gt;</button>
+        </div>
+    </div>
+
+    <script>
+        // Carousel functionality
+        let currentImageIndex = 0;
+        let imagesArray = [];
+
+        // Get all thumbnail elements
+        const thumbnails = Array.from(document.getElementsByClassName('thumbnail'));
+        
+        // Create array of image sources and captions
+        thumbnails.forEach(thumbnail => {
+            imagesArray.push({
+                src: thumbnail.href,
+                caption: thumbnail.querySelector('img').alt
+            });
+        });
+
+        // Open modal with carousel
+        thumbnails.forEach((thumbnail, index) => {
+            thumbnail.onclick = function(event) {
+                event.preventDefault();
+                currentImageIndex = index;
+                openCarousel();
+            }
+        });
+
+        function openCarousel() {
+            modal.style.display = "block";
+            updateCarousel();
+        }
+
+        function updateCarousel() {
+            modalImg.src = imagesArray[currentImageIndex].src;
+            captionText.innerHTML = imagesArray[currentImageIndex].caption;
+            document.querySelector('.carousel-counter').textContent = 
+                `${currentImageIndex + 1} / ${imagesArray.length}`;
+        }
+
+        // Navigation handlers
+        document.querySelector('.prev').addEventListener('click', () => {
+            currentImageIndex = (currentImageIndex - 1 + imagesArray.length) % imagesArray.length;
+            updateCarousel();
+        });
+
+        document.querySelector('.next').addEventListener('click', () => {
+            currentImageIndex = (currentImageIndex + 1) % imagesArray.length;
+            updateCarousel();
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (modal.style.display === "block") {
+                if (e.key === 'ArrowLeft') {
+                    currentImageIndex = (currentImageIndex - 1 + imagesArray.length) % imagesArray.length;
+                    updateCarousel();
+                } else if (e.key === 'ArrowRight') {
+                    currentImageIndex = (currentImageIndex + 1) % imagesArray.length;
+                    updateCarousel();
+                }
+            }
+        });
+
+        // Keep the existing modal close functionality
+        var modal = document.getElementById("imageModal");
+        var span = document.getElementsByClassName("close")[0];
+        
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <style>
+        /* Carousel Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        .carousel-container {
+            position: relative;
+            max-width: 90%;
+            height: 90vh;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 15px 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            font-size: 24px;
+            z-index: 100;
+        }
+
+        .prev { left: 10px; }
+        .next { right: 10px; }
+
+        .carousel-counter {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            background: rgba(0,0,0,0.7);
+            padding: 8px 15px;
+            border-radius: 5px;
+            z-index: 100;
+        }
+
+        .modal-content {
+            max-width: 100%;
+            max-height: 80vh;
+            object-fit: contain;
+            margin: auto;
+            display: block;
+        }
+
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            display: none;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        @keyframes spin {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="carousel-container">
+            <div class="carousel-counter"></div>
+            <button class="carousel-nav prev">&lt;</button>
+            <div class="loading"></div>
+            <img class="modal-content" id="fullImage">
+            <button class="carousel-nav next">&gt;</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <!-- ... original footer content ... -->
+        </div>
+    </footer>
+
+    <script>
+       
+       // Carousel functionality
+        let currentImageIndex = 0;
+        let imagesArray = [];
+
+        // Initialize images
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get all thumbnail links
+            const thumbnails = document.querySelectorAll('a.thumbnail');
+            imagesArray = Array.from(thumbnails).map(thumbnail => ({
+                src: thumbnail.href,
+                alt: thumbnail.querySelector('img').alt
+            }));
+
+            // Preload images when idle
+            if ('requestIdleCallback' in window) {
+                window.requestIdleCallback(() => {
+                    imagesArray.forEach(img => {
+                        new Image().src = img.src;
+                    });
+                });
+            }
+        });
+
+        // Open carousel
+        function openCarousel(index) {
+            currentImageIndex = index;
+            const modal = document.getElementById('imageModal');
+            const loading = document.querySelector('.loading');
+            const modalImg = document.getElementById('fullImage');
+
+            modal.style.display = 'block';
+            loading.style.display = 'block';
+            modalImg.style.display = 'none';
+
+            const img = new Image();
+            img.src = imagesArray[currentImageIndex].src;
+            img.onload = () => {
+                modalImg.src = img.src;
+                modalImg.alt = imagesArray[currentImageIndex].alt;
+                loading.style.display = 'none';
+                modalImg.style.display = 'block';
+                updateCounter();
+            };
+        }
+
+        // Update counter
+        function updateCounter() {
+            document.querySelector('.carousel-counter').textContent = 
+                `${currentImageIndex + 1} / ${imagesArray.length}`;
+        }
+
+        // Event listeners
+        document.querySelectorAll('a.thumbnail').forEach((thumbnail, index) => {
+            thumbnail.addEventListener('click', (e) => {
+                e.preventDefault();
+                openCarousel(index);
+            });
+        });
+
+        // Navigation buttons
+        document.querySelector('.prev').addEventListener('click', () => {
+            currentImageIndex = (currentImageIndex - 1 + imagesArray.length) % imagesArray.length;
+            openCarousel(currentImageIndex);
+        });
+
+        document.querySelector('.next').addEventListener('click', () => {
+            currentImageIndex = (currentImageIndex + 1) % imagesArray.length;
+            openCarousel(currentImageIndex);
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            const modal = document.getElementById('imageModal');
+            if (modal.style.display === 'block') {
+                switch(e.key) {
+                    case 'ArrowLeft':
+                        document.querySelector('.prev').click();
+                        break;
+                    case 'ArrowRight':
+                        document.querySelector('.next').click();
+                        break;
+                    case 'Escape':
+                        modal.style.display = 'none';
+                        break;
+                }
+            }
+        });
+
+        // Close modal
+        document.querySelector('.close').addEventListener('click', () => {
+            document.getElementById('imageModal').style.display = 'none';
+        });
+
+        // Close when clicking outside
+        window.addEventListener('click', (e) => {
+            if (e.target === document.getElementById('imageModal')) {
+                document.getElementById('imageModal').style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
+

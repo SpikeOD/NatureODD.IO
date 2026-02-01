@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-adsense-account" content="ca-pub-4827720704474204">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheița Gorge</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+   
+    <!-- Prefetching Links -->
+    <link rel="prefetch" href="Images/adventure2.jpg" as="image">
+        
+</head>
+<body>
+    
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Nature OD'D Adventures</div>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#resources">Resources</a></li>
+                <li><a href="index.html#community">Community</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=61561495708691" target="_blank">FB</a>
+            <a href="#">X</a>
+            <a href="#">IG</a>
+        </div>
+    </header>
+
+    <!-- Cheile Cheitei Content -->
+    <section id="cheile-cheitei" class="adventure-content">
+        <div class="image-container">
+            <img src="Images/adventure2.jpg" alt="Cheița Gorge"
+            class="preview-thumbnail" loading="lazy">
+            <div class="overlay-text">
+                <h1>Cheița Gorge</h1>
+                <p>Cheița Gorge is a stunning gorge located in Romania's Bucegi Mountains, known for its dramatic limestone cliffs, crystal-clear streams, and lush vegetation. This natural wonder offers visitors breathtaking scenery and exciting hiking opportunities through its narrow passages and along its rushing waters.</p>
+                <p>Cheița Gorge is a path where stone and water shape the journey. The river has carved its way through the limestone, leaving behind walls that rise tall and narrow, guarding the trail in silence. Roots cling to the rock, trees bend overhead, and the sound of rushing water follows every step. At times, the way squeezes tight between stone, at others it opens to reveal the forest light. To walk through Cheița Gorge is to follow the river’s secret, a passage where nature’s strength and beauty stand side by side.</p>
+            </div>
+        </div>
+
+        <h2>Where the Journey Begins</h2>
+
+        <ul><li>
+            <h3>From Nest to Forest</h3>
+            <p>The journey begins at dawn, gazing from the hotel balcony where birds have built their nests, their songs carrying promises of the trail ahead. Soon, footsteps fall upon the old rusted bridge, its weathered frame whispering stories of time gone by. Across the span, the forest waits in the distance — quiet, green, and endless — calling the heart to wander.</p>
+            <a href="Images/cheitei1.webp" target="_blank" class="thumbnail">
+                    <img src="Images/cheitei1.webp" alt="" class="preview-thumbnail" loading="lazy">
+                </a>
+            <a href="Images/cheitei1.1.webp" target="_blank" class="thumbnail">
+                    <img src="Images/cheitei1.1.webp" alt="" class="preview-thumbnail" loading="lazy">
+                </a> 
+            </li>
+            <li>
+            <a href="https://www.youtube.com/watch?v=vLTflaPdyEg" target="_blank" rel="noopener">Watch on YouTube</a>
+
+<div class="video-wrapper">
+  <div class="video-container">
+    <iframe
+      src="https://www.youtube.com/embed/vLTflaPdyEg"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+<style>
+  .video-wrapper {
+    display: flex;
+    justify-content: center;  /* centers horizontally */
+    margin: 20px 0;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 560px;   /* never larger than desktop size */
+    aspect-ratio: 16 / 9; /* keeps 560x315 ratio automatically */
+  }
+
+  .video-container iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+            </li>
+        </ul>
+        
+       <ul><h3>The Forest Beckons</h3>
+        <p>The air shifts — cooler, alive with the scent of moss and pine. To our right, the river runs alongside the trail, its steady song guiding each step. Sunlight scatters across the water, catching on ripples as if the forest itself were breathing. The path bends forward, quiet and inviting, carrying us deeper into the wilderness.</p>
+        <li><a href="Images/cheitei2.webp" target="_blank" class="thumbnail">
+                    <img src="Images/cheitei2.webp" alt="" class="preview-thumbnail" loading="lazy">
+                </a>
+            <a href="Images/cheitei2.1.webp" target="_blank" class="thumbnail">
+                    <img src="Images/cheitei2.1.webp" alt="" class="preview-thumbnail" loading="lazy">
+            <a href="Images/cheitei2.2.webp" target="_blank" class="thumbnail">
+                    <img src="Images/cheitei2.2.webp" alt="" class="preview-thumbnail" loading="lazy">        
+                </a>
+        <li>
+            <a href="https://www.youtube.com/watch?v=4rp_b7IFud8" target="_blank" rel="noopener">The Forest Beckons</a></p>
+
+<div class="video-wrapper">
+  <div class="video-container">
+    <iframe
+      src="https://www.youtube.com/embed/4rp_b7IFud8"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+            </li>
+        </ul>
+
+        <ul><h3>Where Ruins Rest and Paths Rise</h3>
+        <p>The trail carries us onward until we reach a fallen stone wall, its quiet ruins resting in the shade. A few wooden benches wait beneath the trees, offering a pause in the cool stillness. From here, the path narrows, pressing us into thick bushes and a steeper, more abrupt climb — each step pulling us deeper into the untamed heart of the forest.</p>
+        <li><a href="Images/cheitei3.webp" target="_blank" class="thumbnail">
+                    <img src="Images/cheitei3.webp" alt="" class="preview-thumbnail" loading="lazy">
+                </a>
+            <a href="Images/cheitei3.1.webp" target="_blank" class="thumbnail">
+                    <img src="Images/cheitei3.1.webp" alt="" class="preview-thumbnail" loading="lazy">      
+                </a>
+            <a href="Images/cheitei4.webp" target="_blank" class="thumbnail">
+                    <img src="Images/cheitei4.webp" alt="" class="preview-thumbnail" loading="lazy">      
+                </a> 
+            <a href="Images/cheitei4.1.webp" target="_blank" class="thumbnail">
+                    <img src="Images/cheitei4.1.webp" alt="" class="preview-thumbnail" loading="lazy">      
+                </a>
+            <a href="Images/cheitei4.2.webp" target="_blank" class="thumbnail">
+                    <img src="Images/cheitei4.2.webp" alt="" class="preview-thumbnail" loading="lazy">      
+                </a>   
+        <li>
+            <a href="https://www.youtube.com/watch?v=hv0V42l6RoE" target="_blank" rel="noopener">Where Ruins Rest and Paths Rise</a></p>
+
+<div class="video-wrapper">
+  <div class="video-container">
+    <iframe
+      src="https://www.youtube.com/embed/hv0V42l6RoE"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+ </div>
+</div>
+            </li>
+        </ul>
+        
+        <ul><h3>Between Canopy and Current</h3>
+        <p>The path carries us deeper into the green forest, winding steadily upward beneath the canopy. Sunlight filters through shifting leaves, painting the ground in living patterns as we climb. At the crest, the trail bends and begins its descent, leading us down through roots and stone until the sound of rushing water grows near. At last, we return to the river’s edge, where the forest and the flowing current meet in harmony.</p>   
+        <li>
+            <a href="https://www.youtube.com/watch?v=eIAupiUGcRQ" target="_blank" rel="noopener">Between Canopy and Current</a></p>
+
+<div class="video-wrapper">
+  <div class="video-container">
+    <iframe
+      src="https://www.youtube.com/embed/eIAupiUGcRQ"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+ </div>
+</div>
+            </li>
+        </ul>
+
+        <ul><h3>Road Along the Current</h3>
+        <p>The road bends and continues beside the river, its waters keeping pace with us, flowing steady and clear beneath the trees.</p>
+        <li><a href="Images/cheitei5.webp" target="_blank" class="thumbnail">
+                    <img src="Images/cheitei5.webp" alt="" class="preview-thumbnail" loading="lazy">
+                </a>
+            <a href="Images/cheitei5.1.webp" target="_blank" class="thumbnail">
+                    <img src="Images/cheitei5.1.webp" alt="" class="preview-thumbnail" loading="lazy">      
+                </a>
+            <a href="Images/cheitei5.2.webp" target="_blank" class="thumbnail">
+                    <img src="Images/cheitei5.2.webp" alt="" class="preview-thumbnail" loading="lazy">      
+                </a> 
+            <a href="Images/cheitei5.3.webp" target="_blank" class="thumbnail">
+                    <img src="Images/cheitei5.3.webp" alt="" class="preview-thumbnail" loading="lazy">      
+                </a>
+            <a href="Images/cheitei5.4.webp" target="_blank" class="thumbnail">
+                    <img src="Images/cheitei5.4.webp" alt="" class="preview-thumbnail" loading="lazy">      
+                </a>   
+        <li>
+            <a href="https://www.youtube.com/watch?v=W-IPHAqfQw4" target="_blank" rel="noopener">Road Along the Current</a></p>
+
+<div class="video-wrapper">
+  <div class="video-container">
+    <iframe
+      src="https://www.youtube.com/embed/W-IPHAqfQw4"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+ </div>
+</div>
+            </li>
+        </ul>
+
+<section class="trail-section">
+  <h3>Between Rocks and River</h3>
+  <p>
+    The path rises steep and abrupt, pulling us through thick bushes before turning downward again.
+    Soon, tall rocks rise at our side, their silent faces guiding the way as the trail runs close beside
+    the river, where stone and water keep us company.
+  </p>
+
+  <div class="video-grid">
+    <div class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/YDtl2sPbKvw"
+        title="YouTube video 1"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/RWWKhY94ZZ8"
+        title="YouTube video 2"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/mPsfKmKmyiE"
+        title="YouTube video 3"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<style>
+  .trail-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+
+  .trail-section h3 {
+    margin: 0 0 8px;
+    text-align: center;
+  }
+
+  .trail-section p {
+    margin: 0 0 20px;
+    text-align: center;
+  }
+
+  /* One grid, three items */
+  .video-grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr;               /* mobile: 1 column */
+  }
+  @media (min-width: 768px) {
+    .video-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } /* ≥768px: 3 columns */
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+  .video-container iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+        
+        
+        
+        <h2>Hiking Tips</h2>
+        <p>For those planning to visit Cheița Gorge:</p>
+        <ul>
+            <li>Wear sturdy hiking shoes with good grip</li>
+            <li>Bring plenty of water and snacks</li>
+            <li>Start early to avoid crowds</li>
+            <li>Check weather conditions before heading out</li>
+            <li>Respect the natural environment - take only photos, leave only footprints</li>
+        </ul>
+    </section>
+
+    <!-- Modal for Full-Size Image -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="fullImage">
+        <div id="caption"></div>
+    </div>
+
+   <!-- Footer -->
+   <footer>
+    <div class="footer-content">
+        <div class="quick-links">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#about">About Us</a>
+            <a href="index.html#blog">Blog</a>
+            <a href="index.html#resources">Resources</a>
+            <a href="index.html#community">Community</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="newsletter">
+            <form>
+                <label for="email">Subscribe to our newsletter</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=61561495708691" target="_blank">FB</a>
+            <a href="#">YT</a>
+            <a href="#">X</a>
+        </div>
+        <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("imageModal");
+
+    // Get the Images and insert them inside the modal
+    var thumbnails = document.getElementsByClassName("thumbnail");
+    var modalImg = document.getElementById("fullImage");
+    var captionText = document.getElementById("caption");
+
+    for (var i = 0; i < thumbnails.length; i++) {
+        thumbnails[i].onclick = function(event) {
+            event.preventDefault();
+            modal.style.display = "block";
+            modalImg.src = this.href;
+            captionText.innerHTML = this.children[0].alt;
+        }
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+        modal.style.display = "none";
+    }
+</script>
+<html lang="en">
+<head>
+    <!-- ... (keep the existing head content) ... -->
+    <style>
+        /* Add carousel styles */
+        .carousel-container {
+            position: relative;
+            max-width: 80%;
+            margin: auto;
+        }
+
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,0.5);
+            color: white;
+            padding: 15px;
+            cursor: pointer;
+            border: none;
+            z-index: 100;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .carousel-counter {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            background: rgba(0,0,0,0.5);
+            padding: 5px 10px;
+            border-radius: 5px;
+            z-index: 100;
+        }
+
+        /* Update modal styles */
+        .modal-content {
+            max-height: 80vh;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Modal for Carousel -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="carousel-container">
+            <div class="carousel-counter"></div>
+            <button class="carousel-nav prev">&lt;</button>
+            <img class="modal-content" id="fullImage">
+            <button class="carousel-nav next">&gt;</button>
+        </div>
+    </div>
+
+1.3 KB omitted

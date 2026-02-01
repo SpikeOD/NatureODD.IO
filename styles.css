@@ -84,7 +84,6 @@ header .social-media a {
     padding: 40px 20px;
     background-color: rgba(224, 242, 241, 0.8);
     text-align: center;
-    color: #004d40; /* Dark text for contrast */
 }
 
 .featured-adventures h2 {
@@ -294,6 +293,7 @@ long-videos h2 {
     height: auto;
     border-radius: 10px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .adventure-content .video-container {
@@ -573,6 +573,7 @@ footer .newsletter button:hover {
     height: auto;
     border-radius: 10px;
     margin-bottom: 20px;
+    cursor:pointer;
 }
 
 /* Specific style for the main adventure1.jpg image */
@@ -631,15 +632,6 @@ footer .newsletter button:hover {
     transition: transform 0.3s ease;
 }
 
-/* Specific style for the main adventure1.jpg image */
-.adventure-content img[src="Images/adventure1.jpg"] {
-    width: 300px;
-    display: block;
-    margin: 0 auto 20px;
-    border: 3px solid #fff;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
 /* Specific style for the main adventure2.jpg image */
 .adventure-content img[src="Images/adventure2.jpg"] {
     width: 300px;
@@ -647,6 +639,7 @@ footer .newsletter button:hover {
     margin: 0 auto 20px;
     border: 3px solid #fff;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-color: #dde5a3;
 }
 
 /* Style for thumbnail/preview images */
